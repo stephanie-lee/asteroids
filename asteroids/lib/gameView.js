@@ -11,9 +11,11 @@
 
   GameView.prototype.start = function() {
     var that = this;
-    console.log(that.ctx);
     setInterval( function() {that.game.draw(that.ctx); }, 10);
-    setInterval(that.game.moveObjects.bind(that.game), 10);
+    setInterval(that.game.step.bind(that.game), 10);
+    // console.log(that.game.asteroids);
+    // setInterval(that.game.checkCollisions.bind(that.game), 10);
+
   };
 
 })();

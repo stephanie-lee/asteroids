@@ -7,8 +7,8 @@
   Asteroids.Asteroid = function(posHash){
     var optionsHash = {
       pos: posHash.pos,
-      vel: Asteroids.Util.randomVec(1),
-      COLOR: "#FF0000",
+      vel: Asteroids.Util.randomVec(5),
+      COLOR: "#14dba4",
       RADIUS: 20,
       game: posHash.game
     };
